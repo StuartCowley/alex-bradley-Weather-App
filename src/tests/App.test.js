@@ -5,9 +5,7 @@ import forecast from "../data/forecast.json";
 
 describe("App", () => {
   test("renders learn react link", () => {
-    render(
-      <App location={forecast.location} forecasts={forecast.forecasts[0]} />
-    );
+    render(<App location={forecast.location} forecasts={forecast.forecasts} />);
     const h1Element = screen.getByText(/Manchester, UK/i);
     expect(h1Element).toBeInTheDocument();
   });

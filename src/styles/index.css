@@ -8,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* h1{
+  margin: 50px;
+}
+
 .forecast{
   display: flex;
   flex-direction: column;
@@ -18,4 +22,4 @@ body {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-}
+} */
