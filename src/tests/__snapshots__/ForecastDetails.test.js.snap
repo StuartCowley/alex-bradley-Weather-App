@@ -12,14 +12,14 @@ exports[`ForecastDetails renders correctly 1`] = `
       Date: Mon Apr 30 2018
     </div>
     <div
-      class="forecast-details__minTemperature"
-    >
-      Min Temp: 4
-    </div>
-    <div
       class="forecast-details__maxTemperature"
     >
-      Max Temp: 11
+      Max Temp: 11°c
+    </div>
+    <div
+      class="forecast-details__minTemperature"
+    >
+      Min Temp: 4°c
     </div>
     <div
       class="forecast-details__windSpeed"

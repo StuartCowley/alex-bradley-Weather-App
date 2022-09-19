@@ -12,12 +12,7 @@ function App({ location, forecasts }) {
 
       <ForecastSummaries forecasts={forecasts} />
 
-      <ForecastDetails
-        date={forecasts[0].date}
-        temperature={forecasts[0].temperature}
-        wind={forecasts[0].wind}
-        humidity={forecasts[0].humidity}
-      />
+      <ForecastDetails forecast={forecasts[0]} />
     </div>
   );
 }

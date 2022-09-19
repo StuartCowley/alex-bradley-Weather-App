@@ -17,37 +17,23 @@ describe("ForecastDetails", () => {
   };
 
   it("renders correctly", () => {
-    const { asFragment } = render(
-      <ForecastDetails
-        date={validProps.date}
-        temperature={validProps.temperature}
-        wind={validProps.wind}
-        humidity={validProps.humidity}
-      />
-    );
+    const { asFragment } = render(<ForecastDetails forecast={validProps} />);
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   it("renders correct values for props", () => {
-    const { getByText, getByTestId } = render(
-      <ForecastDetails
-        date={validProps.date}
-        temperature={validProps.temperature}
-        wind={validProps.wind}
-        humidity={validProps.humidity}
-      />
-    );
+    const { getByText } = render(<ForecastDetails forecast={validProps} />);
 
     expect(getByText("Date: Mon Apr 30 2018")).toHaveAttribute(
       "class",
       "forecast-details__date"
     );
-    expect(getByText("Min Temp: 4")).toHaveAttribute(
+    expect(getByText("Min Temp: 4°c")).toHaveAttribute(
       "class",
       "forecast-details__minTemperature"
     );
-    expect(getByText("Max Temp: 11")).toHaveAttribute(
+    expect(getByText("Max Temp: 11°c")).toHaveAttribute(
       "class",
       "forecast-details__maxTemperature"
     );
