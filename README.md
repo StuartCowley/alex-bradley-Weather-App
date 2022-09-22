@@ -28,4 +28,4 @@ npm test
 ```
 
 # Use
-Search for towns and cities in th UK and get a 5 day forecast with the option to more forecast details.
+Search for towns and cities in the UK and get a 5 day forecast with the option to more forecast details.
