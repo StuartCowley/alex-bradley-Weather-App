@@ -1,3 +1,8 @@
 .weather-app{
     margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.weather-app > * {
+    padding: 20px 0px;
 }
